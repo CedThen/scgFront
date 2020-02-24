@@ -1,0 +1,24 @@
+$display-msgs-background-color: #484d6d;
+$display-msgs-text-color: #d9f7fa;
+
+.displayMsgs {
+  &__container {
+    position: absolute;
+    top: 40%;
+    height: 60vh;
+    width: 80%;
+    // right: 5%;
+  }
+  &__title {
+    font-size: 3rem;
+    color: $display-msgs-text-color;
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: $display-msgs-text-color;
+  }
+  &__vote-count {
+    float: right;
+  }
+}

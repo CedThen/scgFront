@@ -1,0 +1,83 @@
+$color-heading-primary: white;
+$color-heading-secondary: #d9f7fa;
+$color-text-tertiary: #be6a9b;
+
+//more colors
+//6E7E85 grey
+//B7CECE pastel blue grey
+//BBBAC6 reddish grey
+//E2E2E2 plat
+//#131617
+
+.header {
+  position: relative;
+  height: 100vh;
+
+  &__three-canvas {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  &__text-box {
+    font-family: "PermanentMarker-Regular";
+    font-size: 4rem;
+    position: absolute;
+    width: 70%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__heading-primary {
+    letter-spacing: 1rem;
+    color: $color-heading-primary;
+  }
+  &__heading-sub {
+    color: $color-heading-secondary;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+  }
+}
+.link-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 60%;
+  width: 100%;
+
+  &__madlib {
+    margin: 3rem;
+    text-align: center;
+
+    padding: 3rem;
+  }
+  &__crosswords {
+    margin: 3rem;
+    text-align: center;
+
+    padding: 3rem;
+  }
+  &__btn {
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: $color-heading-secondary;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1rem;
+    color: $color-text-tertiary;
+    .dumb {
+      text-decoration: line-through;
+    }
+  }
+}

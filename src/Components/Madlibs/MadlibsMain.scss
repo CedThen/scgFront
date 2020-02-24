@@ -1,0 +1,67 @@
+$color-madlibs-title: #d9f7fa;
+$color-stream-name: #94c7a7;
+//more colors
+// 08B2E3 57A773 484D6D EFE9F4
+
+.madlibs {
+  &__right-panel {
+    // border: groove;
+    border-width: 1px;
+    position: absolute;
+    right: 3%;
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+  }
+  &__left-panel {
+    // border: groove;
+    position: absolute;
+    left: 0%;
+    width: 70%;
+    height: 90%;
+  }
+  &__three-canvas {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  &__title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "PermanentMarker-Regular";
+    font-size: 10rem;
+    text-align: center;
+    color: $color-madlibs-title;
+  }
+  // &__stream-tag {
+  //   position: absolute;
+  //   top: 22%;
+  //   right: 5%;
+  //   transform: translate(-50%, -50%);
+  //   font-size: 3rem;
+  // }
+  &__stream-name {
+    position: relative;
+    top: 25%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 5rem;
+    color: $color-stream-name;
+    text-transform: uppercase;
+    text-decoration: underline;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
