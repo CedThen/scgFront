@@ -7,7 +7,8 @@ import GameDisplay from "../GameDisplay/GameDisplay";
 import Navigation from "../Navbar/Navigation.js";
 import ThreeJsBg from "../ThreeJSBackground.js";
 
-const socketURL = "ws://localhost:3030";
+// const socketURL = "ws://localhost:3030";
+const socketURL = "ws://ec2-3-14-133-230.us-east-2.compute.amazonaws.com:3030";
 
 class MadlibsHome extends React.Component {
   constructor() {
